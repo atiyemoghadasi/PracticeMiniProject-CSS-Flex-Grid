@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تمرین CSS/Flex-Grid</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="desktop-header">
+        <div class="topbar">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.svg" alt="logo">
+            </a>
+            <div class="header-icons">
+                <div class="search-box">
+                    <input type="text" placeholder="جستجوی محصول">
+                    <a href="#">
+                        <button><i class='bx bx-search'></i></button>
+                    </a>
+                </div>
+                <div class="heart-box">
+                    <a href="#">
+                        <i class='bx bx-heart bx-sm'></i>
+                    </a>
+                </div>
+                <div class="login">
+                    <a href="#">
+                        <i class='bx bxs-user-account'></i>
+                        <span class="login-text">ورود/ثبت نام</span>
+                        <i class='bx bx-chevron-left bx-sm'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="top-bar-line"></div>
+        <nav>
+            <div class="menu-section">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">خانه</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            فروشگاه
+                            <span class="submenu-icon">
+                                <i class='bx bx-chevron-down bx-xs'></i>
+                            </span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="#">گوشی موبایل</a></li>
+                            <li><a href="#">لپ تاپ</a></li>
+                            <li><a href="#">تبلت</a></li>
+                            <li><a href="#">اکسسوری دیجیتال</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">بلاگ</a></li>
+                </ul>
+            </div>
+            <div class="cart-section">
+                <a href="#">
+                    <i class='bx bxs-cart bx-sm'></i>
+                </a>
+                <div class="counter">
+                    <span>0</span>
+                </div>
+            </div>
+        </nav>
+        <div class="menu-line"></div>
+    </header>
+    <header class="mobile-header">
+        <div class="mobile-topbar">
+            <div class="topbar-icons">
+                <div class="heart-box">
+                    <a href="#">
+                        <i class='bx bx-heart'></i>
+                    </a>
+                </div>
+                <button class="login"><i class='bx bxs-user-account'></i></button>
+            </div>
+            <a href="#" class="logo">
+                <img src="assets/images/logo.svg" alt="logo">
+            </a>
+        </div>
+        <div class="mobile-menu-section">
+            <button class="hamburger-menu" class="submenu-toggle"><i class='bx bx-menu'></i></button>
+            <ul class="menu">
+                <li><a href="index.html">خانه</a></li>
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle">فروشگاه <i class='bx bx-chevron-down'></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">گوشی موبایل</a></li>
+                        <li><a href="#">لپ تاپ</a></li>
+                        <li><a href="#">تبلت</a></li>
+                        <li><a href="#">اکسسوری دیجیتال</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#">تماس با ما</a></li>
+                <li><a href="#">بلاگ</a></li>
+            </ul>
+            <div class="icons">
+                <div class="search-box">
+                    <input type="text" placeholder="جستجوی محصول">
+                    <button><i class='bx bx-search'></i></button>
+                </div>
+                <div class="cart-section">
+                    <a href="#">
+                        <i class='bx bxs-cart bx-sm'></i>
+                    </a>
+                    <div class="counter">
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="slider-container">
+                <div class="slider">
+                    <a class="slide-1" href="#">
+                        <img src="assets/images/slide-01.png" alt="slide1-iPhone">
+                    </a>
+                    <button class="prev">
+                        <i class='bx bx-chevron-left bx-sm'></i>
+                    </button>
+                    <button class="next">
+                        <i class='bx bx-chevron-right bx-sm'></i>
+                    </button>
+                    <div class="dots">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-container-1">
+                <a class="banner-1" href="#">
+                    <img src="assets/images/banner-01.png" alt="banner1-Macbook">
+                </a>
+                <a class="banner-2" href="#">
+                    <img src="assets/images/banner-02.png" alt="banner2-cellphone">
+                </a>
+                <a class="banner-3" href="#">
+                    <img src="assets/images/banner-03.png" alt="banner3-cellphone">
+                </a>
+                <a class="banner-4" href="#">
+                    <img src="assets/images/banner-04.png" alt="banner4-cellphone">
+                </a>
+            </div>
+        </section>
+        <div class="background-divider"></div>
+        <div class="carousel-main-container">
+            <div class="amazing-offer">
+                <div class="amazing-offer-text">
+                    <img src="assets/images/dots1.png" alt="پیشنهاد شگفت انگیز">
+                    <div>
+                        <span class="title"><span>پیشنهاد</span> شگفت انگیز</span>
+                        <span class="description">محصولات تحفیف‌دار</span>
+                    </div>
+                </div>
+                <div class="carousel-buttons">
+                    <button class="next-arrow">
+                        <i class='bx bx-chevron-right bx-md'></i>
+                    </button>
+                    <button class="prev-arrow active">
+                        <i class='bx bx-chevron-left bx-md'></i>
+                    </button>
+                    <div class="see-more-wrapper">
+                        <button class="see-more">مشاهده همه</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-container">
+                <div class="carousel-shadow wide"></div>
+                <div class="carousel-shadow narrow"></div>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <a href="#" class="product">
+                        <img src="assets/images/b0af2ec78668c85506c1edc260b42ff447f019c8_166720188545038_nobg.png"
+                            alt="">
+                        <div class="product-name-price">
+                            <h3>ساعت هوشمند اپل واچ مدل Ultra 49 mm Alpine Loop</h3>
+                            <p class="currency"><span>364,000</span> تومان</p>
+                            <p>╴</p>
+                            <p class="currency"><span>25,870,000</span> تومان</p>
+                        </div>
+                    </a>
+                    <a href="#" class="product">
+                        <img src="assets/images/760c0407a514c473eb40542cc8b3d5ee988f1ca2_166126382925658_nobg.png"
+                            alt="">
+                        <div class="product-name-price">
+                            <h3>ساعت هوشمند سامسونگ مدل Galaxy Watch 5 44mm</h3>
+                            <p class="currency"><del>6,999,000</del> تومان</p>
+                            <p class="currency"><span>6,599,000</span> تومان</p>
+                        </div>
+                    </a>
+                    <a href="#" class="product">
+                        <div class="sale-tag">% 8</div>
+                        <img src="assets/images/7b190e819c384b0f38a4158dae481afb33d3a511_165821238417159_nobg.png"
+                            alt="">
+                        <div class="product-name-price">
+                            <h3>ساعت هوشمند اپل واچ سری 7 مدل 45mm Stainless Steel Case</h3>
+                            <p class="currency"><del>5,400,000</del> تومان</p>
+                            <p class="currency"><span>4,990,000</span> تومان</p>
+                        </div>
+                    </a>
+                    <a href="#" class="product">
+                        <div class="sale-tag">% 29</div>
+                        <img src="assets/images/b353d99cbafce342bec8fc23ca4e75c21b02fc9c_164482380448555_nobg.png"
+                            alt="">
+                        <div class="product-name-price">
+                            <h3>هدست مخصوص بازی بلوتوثی اونیکوما مدل B60</h3>
+                            <p class="currency"><del>699,000</del> تومان</p>
+                            <p class="currency"><span>499,000</span> تومان</p>
+                        </div>
+                    </a>
+                    <a href="#" class="product">
+                        <img src="assets/images/858dd307e10ddbe07f9d0c7b1b8885dd60cd4c28_165357188464467_nobg.png"
+                            alt="">
+                        <div class="product-name-price">
+                            <h3>تبلت اپل مدل iPad Air 5th generation Wi-Fi ظرفیت 256</h3>
+                            <p class="currency"><del>27,780,000</del> تومان</p>
+                            <p class="currency"><span>25,780,000</span> تومان</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <a href="#end" class="carousel-bottom-arrow">
+                    <img src="assets/images/scroll-down.png" alt="down-arrow">
+                </a>
+            </div>
+            <div class="banner-container-2">
+                <a class="banner-5" id="banner-5" href="#">
+                    <img src="assets/images/banner-05.png" alt="iPhone-mobile">
+                </a>
+                <a class="banner-6" href="#">
+                    <img src="assets/images/banner-06.png" alt="apple-watch">
+                </a>
+            </div>
+        </div>
+        <div id="end"></div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+        // وقتی روی آیکون همبرگر کلیک می‌کنید
+        document.querySelector('.hamburger-menu').addEventListener('click', function () {
+            // به منو کلاس 'show' رو اضافه یا حذف می‌کنیم
+            document.querySelector('.menu').classList.toggle('show');
+        });
+
+    </script>
+</body>
+
+</html>

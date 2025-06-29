@@ -88,7 +88,7 @@
             </a>
         </div>
         <div class="mobile-menu-section">
-            <button class="hamburger-menu" class="submenu-toggle"><i class='bx bx-menu'></i></button>
+            <button class="hamburger-menu submenu-toggle"><i class='bx bx-menu'></i></button>
             <ul class="menu">
                 <li><a href="index.html">خانه</a></li>
                 <li class="has-submenu">
@@ -250,17 +250,24 @@
         <div id="end"></div>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./assets/images/logo.svg" alt="لوگوی سایت">
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">قوانین</a></li>
+                    <li><a href="#">سوالات متداول</a></li>
+                </ul>
+            </nav>
+            <div class="footer-copy">
+                <p> همه حقوق محفوظ است</p>
+            </div>
+        </div>
     </footer>
-    <script>
-        // وقتی روی آیکون همبرگر کلیک می‌کنید
-        document.querySelector('.hamburger-menu').addEventListener('click', function () {
-            // به منو کلاس 'show' رو اضافه یا حذف می‌کنیم
-            document.querySelector('.menu').classList.toggle('show');
-        });
-
-    </script>
 </body>
 
 </html>

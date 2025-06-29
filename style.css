@@ -5,9 +5,6 @@
 }
 
 
-* {
-    box-sizing: border-box;
-}
 
 @font-face {
     font-family: Vazirmatn;
@@ -99,7 +96,7 @@ a {
     text-decoration: none;
 }
 
-desktop.header {
+.desktop-header {
     background-color: #ffffff;
     color: #4a4d51;
     border-radius: 8px;
@@ -256,12 +253,6 @@ nav .menu-section a:hover {
 }
 
 
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
 .menu li {
     position: relative;
 }
@@ -394,12 +385,12 @@ nav .menu-section a:hover {
 
 .slider .prev {
     right: 90px;
-    bottom: 20px;
+    top: 80%;
 }
 
 .slider .next {
     right: 40px;
-    bottom: 20px;
+    top: 80%;
 }
 
 .dots {
@@ -670,13 +661,49 @@ del {
     height: 1px;
 }
 
-
-footer {
-    text-align: center;
-    margin-top: 1.8rem;
-    font-size: .8rem;
-    color: #6c757d;
+.footer {
+    background-color: #212341;
+    color: #ffffff;
+    padding: 2rem 5rem;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy p {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
 
 
 @media (max-width: 768px) {
@@ -949,6 +976,9 @@ footer {
     }
 
     .menu {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
         display: none;
         /* مخفی کردن منو */
         flex-direction: column;
@@ -975,11 +1005,7 @@ footer {
         text-decoration: none;
     }
 
-    /* زمانی که منو فعال است */
-    .menu.show {
-        display: flex;
-        /* نمایش منو */
-    }
+
 
     /* اگر بخواهید منو رو برای دسکتاپ نمایش بدید */
     @media (min-width: 768px) {

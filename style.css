@@ -580,8 +580,6 @@ nav .menu-section a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* flex: 0 0 140px;
-    scroll-snap-align: start; */
 }
 
 
@@ -725,10 +723,7 @@ del {
         grid-column: 2/3;
     }
 
-    /* nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    } */
+
 
     .carousel .product {
         padding: 0.5rem;
@@ -980,21 +975,18 @@ del {
         display: flex;
         gap: 1rem;
         display: none;
-        /* مخفی کردن منو */
         flex-direction: column;
         list-style-type: none;
         padding: 0;
         margin: 0;
         background-color: #333;
-        /* رنگ پس‌زمینه منو */
     }
 
     .hamburger-menu {
         cursor: pointer;
-        /* نشان دادن آیکون به‌عنوان دکمه */
     }
 
-    /* ظاهر آیتم‌های منو */
+
     .menu li {
         padding: 10px;
         text-align: center;
@@ -1007,18 +999,15 @@ del {
 
 
 
-    /* اگر بخواهید منو رو برای دسکتاپ نمایش بدید */
+
     @media (min-width: 768px) {
         .menu {
             display: flex;
-            /* نمایش منو در اندازه‌های بزرگتر از موبایل */
             flex-direction: row;
-            /* نمایش آیتم‌ها در یک ردیف */
         }
 
         .hamburger-menu {
             display: none;
-            /* مخفی کردن همبرگر در دسکتاپ */
         }
     }
 
